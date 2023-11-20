@@ -1,0 +1,11 @@
+html
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <button (click)="captureAndProcessImage()">Capture and Process Image</button>
+  <div *ngIf="ocrResult">
+    <h2>OCR Result:</h2>
+    <pre>{{ ocrResult | json }}</pre>
+  </div>
+</div>
